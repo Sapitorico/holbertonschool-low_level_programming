@@ -1,0 +1,3 @@
+#!/bin/bash
+/*banana*/
+gcc E- $CFILE.c
