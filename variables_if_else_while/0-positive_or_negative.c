@@ -1,6 +1,5 @@
 #include <time.h>
 #include <stdlib.h>
-
 /**
  *  * main - Entry point
  *   *
@@ -8,14 +7,15 @@
  */
 int main(void)
 {
-	srand(time(NULL));   // Initialization, should only be called once.
-	int r = rand();      // Returns a pseudo-random integer between 0 and RAND_MAX.
-	if (r > 0)
-		printf("%d is positive\n", r);
-	else if (r == 0)
-		printf("%d is zero\n", r);
+		int n;
+
+			srand(time(0));
+				n = rand() - RAND_MAX / 2;
+				if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
 	else
-		printf("%d is negative\n", r;
-				return(0);
+		printf("%d is negative\n", n;
+				return (0);
 				}
-				
