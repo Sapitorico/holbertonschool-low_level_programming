@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_puthcar.c"
 /**
  *  * _isalpha - Checks if a character is alphabetic.
  *   * c: The character to be checked.
