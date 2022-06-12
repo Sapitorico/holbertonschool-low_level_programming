@@ -1,8 +1,11 @@
 #include "main.h"
 /**
- *  * main - check the code
+ *  * add - adds two numbers
  *   *
- *    * Return: Always 0.
+ *    * @num1: first num to add to b
+ *     * @num2: second num to add to a
+ *      *
+ *       * Return: the result
  */
 int add(int num1, int num2)
 {
