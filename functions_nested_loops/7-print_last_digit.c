@@ -5,7 +5,7 @@
  *    *
  *     * Return: last_digit
  */
-int print_last_digit
+int print_last_digiti(int n )
 {
 	int nv;
 
