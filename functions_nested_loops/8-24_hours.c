@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *  * main - check the code
+ *  * jack_bauer - prints 00:00 - 23:59
  *   *
- *    * Return: Always 0.
- */
+ *    * Return: void (always)
+ *     */
 void jack_bauer(void)
 {
 	int hour, minute;
