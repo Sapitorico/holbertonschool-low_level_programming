@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p 'file_name: ' f
+chmod u+x "$f"
