@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_number - prints 0..9
+ *print_numbers - prints 0123456789\n
  *
- * _putchar - pint c
+ *_putchar - pint c
  *
- * Return: void
+ *Return: void
  */
 void print_numbers(void)
 {
