@@ -4,7 +4,7 @@
  *
  *@c: (ch) integer to check
  *
- * return: 1 if c isupper, 0 otherwise
+ * return: 1 if c _isupper, 0 otherwise
  */
 int _isupper(int c)
 {
