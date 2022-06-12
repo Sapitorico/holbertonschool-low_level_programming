@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p 'fine_name: ' f
+chmod u+x "$f"
