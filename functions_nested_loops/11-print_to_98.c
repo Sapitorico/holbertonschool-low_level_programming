@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- *  * main - check the code
+ *  * print_to_98 - prints n..98
  *   *
- *    * Return: Always 0.
+ *    * @n: number to start at
+ *     *
+ *      * Return: always void
  */
 void print_to_98(int n)
 {
