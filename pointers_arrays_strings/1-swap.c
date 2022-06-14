@@ -4,6 +4,7 @@
  *
  * @a: pointer to a value
  * @b: pointer to a value
+ * @swap_int: variable pinter to a
  */
 void swap_int(int *a, int *b)
 {
