@@ -5,6 +5,7 @@
  * @dest: pointer
  * @src: pinter
  * @n: bytes
+ * Return: des
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
