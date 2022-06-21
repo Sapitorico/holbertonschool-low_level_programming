@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * factorial - function that returns the factorial of a given number
+ * _factorial - function that returns the factorial of a given number
  * @n: argumetno de l funcion
- * Retrun: weqw
+ * Retrun: returns the factorial of a given number -1
  */
-int factorial(int n)
+int _factorial(int n)
 {
 	if (n < 0)
 	{
@@ -14,5 +14,5 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return (n * factorial(n - 1));
+	return (n * _factorial(n - 1));
 			}
