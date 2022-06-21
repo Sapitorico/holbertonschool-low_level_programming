@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
 	printf("%s\n", argv[i]);
 	i++;
 	}
-	putchar(10);
+	putchar(i);
 	return (0);
 }
