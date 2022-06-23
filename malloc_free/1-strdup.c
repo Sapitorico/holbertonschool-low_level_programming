@@ -8,15 +8,20 @@
  */
 char *_strdup(char *str)
 {
-	int i, n;
+	int i = 0, n;
 	char *s;
 
-	if (str == 0)
-                return (NULL);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while(str[i])
+	{
 		i++;
-	s = malloc(sizeof(char) * i + 1);
-	if (s == 0)
+	}
+
+	s = malloc((sizeof(char) * i + 1));
+	if (s == NULL)
 	{
 		return (NULL);
 	}
@@ -24,6 +29,5 @@ char *_strdup(char *str)
 	{
 		s[n] = str[n];
 	}
-	s[n] = '\0'
 	return (s);
 }
