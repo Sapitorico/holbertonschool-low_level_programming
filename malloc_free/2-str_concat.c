@@ -3,7 +3,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int l1, l2, i, m;
+	int l1, l2, i = 0, m;
 	char *s3;
 
 	for (l1 = 0; s1[l1] != '\0'; l1++)
