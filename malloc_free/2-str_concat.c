@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * str_concat -  function that concatenates two strings
+ *
+ * @s1: string of array
+ * @s2: string of array
+ * Return: return a contatenate
+ */
 char *str_concat(char *s1, char *s2)
 {
 	int l1, l2, i = 0, m;
