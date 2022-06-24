@@ -19,11 +19,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; s1 && i < l1; i++)
+	for (i = 0; s1 != NULL && i < l1; i++)
 	{
 		s3[i] = s1[i];
 	}
-	for (m = 0; s2 && m < l2; m++, i++)
+	for (m = 0; s2 != NULL && m < l2; m++, i++)
 	{
 		s3[i] = s2[m];
 	}
