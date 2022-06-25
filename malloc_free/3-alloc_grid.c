@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * alloc_grid - function create 2 dimensional array of ints
+ * @width: array
+ * @height: array
+ * Return: pinter to array
+ */
 int **alloc_grid(int width, int height)
 {
 	int i, n;
