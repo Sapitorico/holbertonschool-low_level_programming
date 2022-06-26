@@ -18,12 +18,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 	if (n >= len2)
 		n = len2;
-	new_str = malloc(sizeof(char) * (len1 + len2) + 1);
+	new_str = malloc(sizeof(char) * (len1 + len2 + n) + 1);
 	if (new_str == 0)
 		return (NULL);
-	for (i = 0;s1 != NULL && i < len1; i++)
+	for (i = 0; i < len1; i++)
 		new_str[i] = s1[i];
-	for (m = 0;s2 != NULL && m < n; m++, i++)
+	for (m = 0; m < n; m++, i++)
 		new_str[i] = s2[m];
 	new_str[i] = '\0';
 	return (new_str);
