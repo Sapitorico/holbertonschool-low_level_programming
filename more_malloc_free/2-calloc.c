@@ -9,14 +9,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i = 0;
-	int *marray;
+	char *marray;
 
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
-	marray = malloc(sizeof(int) * size);
+	marray = malloc(nmemb * size);
 		if (marray == 0)
 			return (NULL);
-	while (i < nmemb)
+	while (i < nmemb * size)
 	{
 		marray[i] = 0;
 		i++;
