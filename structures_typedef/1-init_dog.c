@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
- * int_dog - initialize truct dog
+ * init_dog - initialize truct dog
  * @d: name
  * @name:struct name
  * @age: struct age
