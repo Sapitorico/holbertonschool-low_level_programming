@@ -6,7 +6,7 @@
  * @name: name a new dog
  * @age: age a new dog
  * @owner: owner a new dog
- * Retrun: void
+ * Return: a new dog create
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
