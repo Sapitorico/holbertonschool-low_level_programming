@@ -4,7 +4,7 @@
  * @array: pinter array
  * @size: size array
  * @cmp:use compare values
- * Retrun: void
+ * Retrurn: void
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -13,6 +13,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (array && cmp)
 		for (i = 0; i < size; i++)
 			if (cmp(array[i]))
-				return(i);
+				return (i);
 	return (-1);
 }
