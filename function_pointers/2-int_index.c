@@ -4,7 +4,7 @@
  * @array: pinter array
  * @size: size array
  * @cmp:use compare values
- * Retrurn: void
+ * Return: void
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
