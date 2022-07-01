@@ -8,8 +8,9 @@
   *
   * @op: The operator
   * @f: The function associated
+  * Return: banan
   */
-typedef struct op
+typedef struct op(void)
 {
 	char *op;
 	int (*f)(int a, int b);
