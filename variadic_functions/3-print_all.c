@@ -42,7 +42,7 @@ int print_string(args int)
  */
 void print_all(const char * const format, ...)
 {
-	types_t  stypes[] = {
+	type_t  stypes[] = {
 		{"c" print_char},
 		{"i" print_int},
 		{"f" print_float},
@@ -58,9 +58,9 @@ void print_all(const char * const format, ...)
 	/* Initialize the argument list. */
 
 	/*strcmp compare strings character by character*/
-	while (s && stypes[i].types != NULL)
+	while (s && stypes[i].type != NULL)
 	{
-		if (!strcmp(s, stypes[i].types))
+		if (!strcmp(s, stypes[i].type))
 			return (stypes[i].f(args));
 		i++;
 	}
