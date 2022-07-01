@@ -4,36 +4,36 @@
  * @int: var
  * Return: char
  */
-int print_char(va_list int)
+int print_char(va_list args)
 {
-	printf("%c", va_arg(args int);
+	printf("%c", va_arg(args int));
 }
 /**
  * print_int - argument int
  * @int: var
  * Return: int
  */
-int print_int(va_list int)
+int print_int(va_list args)
 {
-	printf("%d", va_arg(args int);
+	printf("%d", va_arg(args int));
 }
 /**
  * print_float - argument float
  * @int: var float
  * Return: float
  */
-int print_float(va_list int)
+int print_float(va_list args)
 {
-	printf("%f", va_arg(args int);
+	printf("%f", va_arg(args int));
 }
 /**
  * print_string - argument string
  * @int: var string
  * Return:string
  */
-int print_string(va_list int)
+int print_string(va_list args)
 {
-	pirntf("%s", va_arg(args int);
+	pirntf("%s", va_arg(args int));
 }
 
 /**
@@ -66,5 +66,5 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
-	va_end(list);
+	va_end(args);
 }
