@@ -10,7 +10,7 @@
   * @f: The function associated
   * Return: banan
   */
-typedef struct op(void)
+typedef struct op()
 {
 	char *op;
 	int (*f)(int a, int b);
