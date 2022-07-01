@@ -11,7 +11,7 @@
 typedef struct type
 {
 	char *type;
-	int (*f)(val_list)
+	void (*f)(val_list)
 } type_t;
 
 /*prototypes*/
