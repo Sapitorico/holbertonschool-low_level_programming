@@ -11,16 +11,16 @@
 typedef struct type
 {
 	char *type;
-	void (*f)(val_list)
+	int (*f)(val_list)
 } type_t;
 
 /*prototypes*/
-int print_char(args int);
-int print_int(args int);
-int print_float(args int);
-int print_string(args int);
+int print_char(va_list args);
+int print_int(va_list args);
+int print_float(va_list args);
+int print_string(va_list args);
 
-void print_all(const char * const format, ...);
+void print_all(const char *s const format, ...);
 
 int sum_them_all(const unsigned int n, ...);
 

@@ -24,7 +24,7 @@ int print_int(va_list args)
  */
 int print_float(va_list args)
 {
-	printf("%f", va_arg(args int));
+	printf("%f", va_arg(args double));
 }
 /**
  * print_string - argument string
@@ -33,35 +33,44 @@ int print_float(va_list args)
  */
 int print_string(va_list args)
 {
-	pirntf("%s", va_arg(args int));
+	char *a = va_arg(args char *);
+	if(!a)
+	{
+		f = "(nil)"
+	}
+	printf("%s", f);
 }
 
 /**
  * print_all - function print anything
  * @format: argument format
  */
-void print_all(const char * const format, ...)
+void print_all(const char *s const format, ...)
 {
-	type_t  stypes[] = {
-		{"c" print_char},
-		{"i" print_int},
-		{"f" print_float},
-		{"s" print_string},
+	/*operation function structure*/
+	type_t stypes[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
 		{NULL, NULL}
 	};
 
 	int i = 0;
-	char *s
 	va_list args;
 
 	va_start(args, format);
 	/* Initialize the argument list. */
 
 	/*strcmp compare strings character by character*/
-	while (s && stypes[i].type != NULL)
+	while (format, stypes[i].type !=NULL)
 	{
-		if (!strcmp(s, stypes[i].type))
-			return (stypes[i].f(args));
+		if (!strcmp(format, stypes[i].type))
+		{
+			printf("%s", s);
+			stypes[i].f(args);
+
+		}
 		i++;
 	}
 
