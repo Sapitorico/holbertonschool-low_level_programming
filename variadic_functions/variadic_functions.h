@@ -8,11 +8,11 @@
  * @type: the op
  * @f: the function associated
  */
-typedef struct type
+typedef struct types
 {
-	char *type;
+	char *f;
 	void (*f)(val_list)
-} type_t;
+} types_t;
 
 /*prototypes*/
 int print_char(va_list args);
