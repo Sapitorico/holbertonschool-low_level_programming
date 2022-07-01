@@ -4,13 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
  /**
-  * struc op - Struct op
+  * struct op - Struct op
   *
   * @op: The operator
   * @f: The function associated
-  * Return: banan
   */
-typedef struct op()
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
