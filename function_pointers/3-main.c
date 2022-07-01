@@ -24,6 +24,11 @@ int main(int arc, char *argv[])
 		puts("Error");
 		exit(99);
 	}
+	if (!f)
+	{
+		puts("Error");
+		exit(100);
+	}
 	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
