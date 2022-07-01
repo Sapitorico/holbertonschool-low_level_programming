@@ -36,16 +36,16 @@ int print_string(va_list args)
 	char *a = va_arg(args char *);
 	if(!a)
 	{
-		f = "(nil)"
+		a = "(nil)"
 	}
-	printf("%s", f);
+	printf("%s", a);
 }
 
 /**
  * print_all - function print anything
  * @format: argument format
  */
-void print_all(const char *s const format, ...)
+void print_all(const char * const format, ...)
 {
 	/*operation function structure*/
 	type_t stypes[] = {

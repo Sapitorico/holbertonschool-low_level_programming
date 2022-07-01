@@ -11,7 +11,7 @@
 typedef struct type
 {
 	char *type;
-	int (*f)(val_list)
+	void (*f)(val_list)
 } type_t;
 
 /*prototypes*/
@@ -20,7 +20,7 @@ int print_int(va_list args);
 int print_float(va_list args);
 int print_string(va_list args);
 
-void print_all(const char *s const format, ...);
+void print_all(const char * const format, ...);
 
 int sum_them_all(const unsigned int n, ...);
 
