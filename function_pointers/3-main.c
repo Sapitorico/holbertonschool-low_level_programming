@@ -10,12 +10,14 @@
 int main(int arc, char *argv[])
 {
 	int (*f)(int, int);
+	char *get_op;
 
 	if (arc != 4)
 	{
 		puts("Error");
 		exit(98);
 	}
+	get_op = argv[2];
 
 	f = get_op_func(argv[2]);
 
@@ -24,7 +26,7 @@ int main(int arc, char *argv[])
 		puts("Error");
 		exit(99);
 	}
-	if (!f)
+	if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
 	{
 		puts("Error");
 		exit(100);
