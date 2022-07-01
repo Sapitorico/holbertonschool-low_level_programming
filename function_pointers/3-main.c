@@ -5,7 +5,7 @@
  * main - calculator
  * @arc: the size of vector
  * @argv: the argument of vector
- * return: void
+ * Return: void
  */
 int main(int arc, char *argv[])
 {
