@@ -51,16 +51,15 @@ void print_all(const char * const format, ...)
 	};
 
 	int i = 0;
-	char *s;
-	va_list list;
+	va_list args;
 
-	va_start(list, format);
+	va_start(args, format);
 	/* Initialize the argument list. */
 
 	/*strcmp compare strings character by character*/
-	while (s && stypes[i].type != NULL)
+	while (stypes[i].type != NULL)
 	{
-		if (!strcmp(s, stypes[i].type))
+		if (!strcmp(stypes[i].type))
 			return (stypes[i].f(args));
 		i++;
 	}
