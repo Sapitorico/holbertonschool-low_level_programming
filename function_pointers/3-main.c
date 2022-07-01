@@ -24,7 +24,7 @@ int main(int arc, char *argv[])
 		puts("Error");
 		exit(99);
 	}
-	if (!f)
+	if (f == 0)
 	{
 		puts("Error");
 		exit(100);
