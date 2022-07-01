@@ -3,9 +3,9 @@
 #include <stdio.h>
 /**
  * main - calculator
- * @argc: the size of vector
+ * @arc: the size of vector
  * @argv: the argument of vector
- * retunr: void
+ * return: void
  */
 int main(int arc, char *argv[])
 {
