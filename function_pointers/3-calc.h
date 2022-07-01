@@ -14,7 +14,7 @@ typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
-}op_t;
+} op_t;
 
 /*prototypes*/
 int op_add(int a, int b);
