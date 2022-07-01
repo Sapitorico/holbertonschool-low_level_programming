@@ -4,7 +4,7 @@
  * @int: var
  * Return: char
  */
-int print_char(args int)
+int print_char(va_list int)
 {
 	printf("%c", va_arg(args int);
 }
@@ -13,7 +13,7 @@ int print_char(args int)
  * @int: var
  * Return: int
  */
-int print_int(args int)
+int print_int(va_list int)
 {
 	printf("%d", va_arg(args int);
 }
@@ -22,7 +22,7 @@ int print_int(args int)
  * @int: var float
  * Return: float
  */
-int print_float(args int)
+int print_float(va_list int)
 {
 	printf("%f", va_arg(args int);
 }
@@ -31,7 +31,7 @@ int print_float(args int)
  * @int: var string
  * Return:string
  */
-int print_string(args int)
+int print_string(va_list int)
 {
 	pirntf("%s", va_arg(args int);
 }
@@ -51,15 +51,16 @@ void print_all(const char * const format, ...)
 	};
 
 	int i = 0;
+	char *s
 	va_list args;
 
 	va_start(args, format);
 	/* Initialize the argument list. */
 
 	/*strcmp compare strings character by character*/
-	while (stypes[i].type != NULL)
+	while (s && stypes[i].type != NULL)
 	{
-		if (!strcmp(stypes[i].type))
+		if (!strcmp(s, stypes[i].type))
 			return (stypes[i].f(args));
 		i++;
 	}
