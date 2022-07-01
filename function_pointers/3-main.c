@@ -1,21 +1,30 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-int main(int arc, char argv[])
+/**
+ * main - calculator
+ * @argc: the size of vector
+ * @argv: the argument of vector
+ * retunr: void
+ */
+int main(int arc, char *argv[])
 {
-	int (*f)(int, int)
+	int (*f)(int, int);
 
-		if (arc != 4)
-		{
-			puts("Error");
-			exit(98)
-		}
+	if (arc != 4)
+	{
+		puts("Error");
+		exit(98);
+	}
+
 	f = get_op_func(argv[2]);
+
 	if (!f)
 	{
 		puts("Exit");
-		exit(98);
+		exit(99);
 	}
-	printf("%d\n", &(atoi argv[1], (atoi argv[3]))
-	return (NULL);
+	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
+
+	return (0);
 }

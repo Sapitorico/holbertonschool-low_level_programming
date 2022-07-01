@@ -1,12 +1,14 @@
 #include "3-calc.h"
+#include <string.h>
 /**
- * get_op_func - 
- * @s:
- * Return: void
+ * get_op_func - take the correct function for the operation
+ * @s:the operation
+ * Return: return a pointer to the appropriate function
  */
 int (*get_op_func(char *s))(int, int)
 {
-	p_t ops[] = {
+/*operation function structure*/
+	op_t ops[] = {
         	{"+", op_add},
         	{"-", op_sub},
         	{"*", op_mul},
@@ -15,15 +17,15 @@ int (*get_op_func(char *s))(int, int)
         	{NULL, NULL}
 	};
 
- 	int i;
+ 	int i = 0;
 
-	while (s && ops[i].op != 0)
+	while (s && ops[i].op != NULL)
 	{
+		/*strcmp compare strings character by character*/
 		if (!strcmp(s, ops[i].op))
-		{
-			return(ops[i].f);
-			i++;
-		}
+			return (ops[i].f);
+		i++;
 	}
-	return(NULL);
+
+	return (NULL);
 }
