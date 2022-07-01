@@ -1,4 +1,5 @@
 #include "3-calc.h"
+
 /**
  * op_add - functio
  * @a: first operand
@@ -7,7 +8,8 @@
 int op_add(int a, int b)
 {
 	return (a + b);
-};
+}
+
 /**
  * op_sub - function
  * @a:
@@ -16,7 +18,8 @@ int op_add(int a, int b)
 int op_sub(int a, int b)
 {
 	return (a - b);
-};
+}
+
 /**
  * op_mul - function
  * @a:
@@ -25,7 +28,8 @@ int op_sub(int a, int b)
 int op_mul(int a, int b)
 {
 	return (a * b);
-};
+}
+
 /**
  * op_div - function
  * @a:
@@ -34,7 +38,8 @@ int op_mul(int a, int b)
 int op_div(int a, int b)
 {
 	return (a / b);
-};
+}
+
 /**
  * op_mod -fucntion
  * @a:
