@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
  /**
-  * op - calculator structure
+  * struc op - Struct op
+  *
   * @op: The operator
   * @f: The function associated
   */
