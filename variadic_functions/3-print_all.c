@@ -87,7 +87,7 @@ void print_all(const char * const format, ...)
 			if (!strcmp(format, funcs_ls[const2].types))
 			{
 				funcs_ls[const2].f(args);
-				printf("%s", *separator != '\0');
+				printf("%s", *separator);
 			}
 			const2++;
 		}
