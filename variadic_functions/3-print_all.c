@@ -52,7 +52,7 @@ int print_string(va_list arg)
 	{
 		printf("(nil)");
 	}
-	return(printf("%s", str));
+	return (printf("%s", str));
 }
 
 /**
