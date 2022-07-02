@@ -50,7 +50,7 @@ int print_string(va_list arg)
 	str = va_arg(arg, char *);
 	if (!str)
 	{
-		 str = "(nil)";
+		str = "(nil)";
 	}
 	return (printf("%s", str));
 }
