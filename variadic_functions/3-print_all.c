@@ -5,7 +5,7 @@
 /**
  * print_char - argument char
  * @int: var
- * Return: char
+ * Return: char characer
  */
 int print_char(va_list arg)
 {
@@ -16,8 +16,8 @@ int print_char(va_list arg)
 }
 /**
  * print_int - argument int
- * @int: var
- * Return: int
+ * @int: type int
+ * Return: int num
  */
 int print_int(va_list arg)
 {
@@ -28,8 +28,8 @@ int print_int(va_list arg)
 }
 /**
  * print_float - argument float
- * @int: var float
- * Return: float
+ * @double: type float
+ * Return: float num
  */
 int print_float(va_list arg)
 {
@@ -40,8 +40,8 @@ int print_float(va_list arg)
 }
 /**
  * print_string - argument string
- * @int: var string
- * Return:string
+ * @char: type string
+ * Return: string str
  */
 int print_string(va_list arg)
 {
@@ -58,6 +58,7 @@ int print_string(va_list arg)
 /**
  * print_all - function print anything
  * @format: argument format
+ *
  */
 void print_all(const char * const format, ...)
 {
@@ -70,7 +71,7 @@ void print_all(const char * const format, ...)
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string},
-		{'\0', NULL}
+		{NULL, NULL}
 	};
 
 	int const1 = 0, const2 = 0;
@@ -78,16 +79,16 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	/* Initialize the argument list. */
 
-	/*strcmp compare strings character by character*/
+	/*compare strings character by character*/
 	while (format && format[const1])
 	{
 		const2 = 0;
 		while (funcs_ls[const2].types)
 		{
-			if (format[const1] && funcs_ls[const2].types)
+			if (!strcmp(format, funcs_ls[const2].types))
 			{
-				printf("%s", *separator);
 				funcs_ls[const2].f(args);
+				printf("%s", *separator);
 			}
 			const2++;
 		}

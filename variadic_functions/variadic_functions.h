@@ -4,8 +4,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * struct fprint - string struct
- * @format: the op
+ * struct f_types - string struct
+ * @types: the op
  * @f: the function associated
  */
 typedef struct f_types
