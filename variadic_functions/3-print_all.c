@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 	char *separator[] = {"", ", "};
 	int const1 = 0, const2 = 0;
 
-	f_types_t funcs_ls[] = {
+	f_types_t funcs_ls[4] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 	while (format && format[const1])
 	{
 		const2 = 0;
-		while (funcs_ls[const2].types)
+		while ( const2 < 4 && funcs_ls[const2].types)
 		{
 			/*compare strings character by character*/
 			if (!strcmp(format, funcs_ls[const2].types))
