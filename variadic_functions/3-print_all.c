@@ -50,9 +50,9 @@ int print_string(va_list arg)
 	str = va_arg(arg, char *);
 	if (!str)
 	{
-		str = "(nil)";
+		printf("(nil)");
 	}
-	return (printf("%s", str));
+	return(printf("%s", str));
 }
 
 /**
