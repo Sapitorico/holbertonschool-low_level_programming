@@ -84,7 +84,7 @@ void print_all(const char * const format, ...)
 		while (funcs_ls[const2].types)
 		{
 			/*compare strings character by character*/
-			if (!strcmp(format, funcs_ls[const2].types) != 0)
+			if (!strcmp(format, funcs_ls[const2].types))
 			{
 				funcs_ls[const2].f(args);
 				printf("%s", *separator);
