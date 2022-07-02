@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string},
-		{"\0", NULL}
+		{'\0', NULL}
 	};
 
 	va_start(args, format);
@@ -84,7 +84,7 @@ void print_all(const char * const format, ...)
 		while (funcs_ls[const2].types)
 		{
 			/*compare strings character by character*/
-			if (!strcmp(format, funcs_ls[const2].types) != '\0')
+			if (!strcmp(format, funcs_ls[const2].types) != 0)
 			{
 				funcs_ls[const2].f(args);
 				printf("%s", *separator);
