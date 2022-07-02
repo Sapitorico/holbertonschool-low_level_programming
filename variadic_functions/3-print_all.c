@@ -90,9 +90,9 @@ void print_all(const char * const format, ...)
 				printf("%s", *separator);
 				funcs_ls[const2].f(args);
 			}
-			const2++;
+			const1++;
 		}
-		const1++;
+		const2++;
 	}
 
 	printf("\n");
