@@ -5,6 +5,7 @@
 /**
  * print_char - argument char
  * @int: var
+ * @arg: arguments
  * Return: char characer
  */
 int print_char(va_list arg)
@@ -17,6 +18,7 @@ int print_char(va_list arg)
 /**
  * print_int - argument int
  * @int: type int
+ * @arg: arguments
  * Return: int num
  */
 int print_int(va_list arg)
@@ -29,6 +31,7 @@ int print_int(va_list arg)
 /**
  * print_float - argument float
  * @double: type float
+ * @arg: arguments
  * Return: float num
  */
 int print_float(va_list arg)
@@ -41,14 +44,15 @@ int print_float(va_list arg)
 /**
  * print_string - argument string
  * @char: type string
+ * @arg: arguments
  * Return: string str
  */
 int print_string(va_list arg)
 {
-	char *str; 
+	char *str;
 
 	str = va_arg(arg, char *);
-	if(!str)
+	if (!str)
 	{
 		str = "(nil)";
 	}
@@ -64,7 +68,7 @@ void print_all(const char * const format, ...)
 {
 	/*operation function structure*/
 	va_list args;
-	char *separator[] = {"",", "};
+	char *separator[] = {"", ", "};
 
 	f_types_t funcs_ls[] = {
 		{"c", print_char},
