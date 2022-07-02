@@ -4,6 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int print_school(void);
+void print_school(void);
 
 #endif
