@@ -1,15 +1,11 @@
-#ifndef cal_h
-#define cal_h
-/*calculator library*/
-
- /**
-  * struct op - calculator structure
-  *
-  * @op: The operator
-  * @f: The function associated
-  *
-  * Description: fuck betty longer
-  */
+#ifndef CAL_H
+#define CAL_H
+/**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
 typedef struct op
 {
 	char *op;
@@ -25,4 +21,4 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int);
 
-#endif/*cal_h*/
+#endif/*CAL_H*/

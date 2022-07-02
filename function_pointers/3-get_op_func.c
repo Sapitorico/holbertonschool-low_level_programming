@@ -3,6 +3,7 @@
 /**
  * get_op_func - take the correct function for the operation
  * @s:the operation
+ * struct op - calculator struct
  * Return: return a pointer to the appropriate function
  */
 int (*get_op_func(char *s))(int, int)
