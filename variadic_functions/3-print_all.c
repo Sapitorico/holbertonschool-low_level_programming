@@ -4,7 +4,6 @@
 #include <stdarg.h>
 /**
  * print_char - argument char
- * @int: var
  * @arg: arguments
  * Return: char characer
  */
@@ -17,7 +16,6 @@ int print_char(va_list arg)
 }
 /**
  * print_int - argument int
- * @int: type int
  * @arg: arguments
  * Return: int num
  */
@@ -30,7 +28,6 @@ int print_int(va_list arg)
 }
 /**
  * print_float - argument float
- * @double: type float
  * @arg: arguments
  * Return: float num
  */
@@ -43,7 +40,6 @@ int print_float(va_list arg)
 }
 /**
  * print_string - argument string
- * @char: type string
  * @arg: arguments
  * Return: string str
  */
