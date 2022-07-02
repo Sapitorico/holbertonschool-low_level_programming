@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 git add .
 read -p 'm: ' y
 git commit -m "$y"
