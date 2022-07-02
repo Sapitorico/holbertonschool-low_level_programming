@@ -64,10 +64,10 @@ void print_all(const char * const format, ...)
 {
 	/*operation function structure*/
 	va_list args;
-	char *separator[] = {"", ", "};
+	char *separator[2] = {"", ", "};
 	int const1 = 0, const2 = 0;
 
-	f_types_t funcs_ls[4] = {
+	f_types_t funcs_ls[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
