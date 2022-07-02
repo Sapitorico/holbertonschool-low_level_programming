@@ -11,7 +11,7 @@
 typedef struct fprint
 {
 	char *fprint;
-	int (*f)(val_list)
+	void (*f)(val_list arg);
 } fprint_t;
 
 /*prototypes*/
