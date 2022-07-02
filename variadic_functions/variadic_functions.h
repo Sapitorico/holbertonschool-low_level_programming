@@ -8,17 +8,17 @@
  * @format: the op
  * @f: the function associated
  */
-typedef struct fprint
+typedef struct f_types
 {
-	char *fprint;
-	void (*f)(val_list arg);
-} fprint_t;
+	char *types;
+	int (*f)(va_list arg);
+} f_types_t;
 
 /*prototypes*/
-int print_char(va_list args);
-int print_int(va_list args);
-int print_float(va_list args);
-int print_string(va_list args);
+int print_char(va_list arg);
+int print_int(va_list arg);
+int print_float(va_list arg);
+int print_string(va_list arg);
 
 void print_all(const char * const format, ...);
 
