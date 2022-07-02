@@ -12,7 +12,7 @@ int print_char(va_list arg)
 	char character;
 
 	character = va_arg(arg, int);
-	printf("%c", character);
+	return (printf("%c", character));
 }
 /**
  * print_int - argument int
@@ -24,7 +24,7 @@ int print_int(va_list arg)
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%d", num);
+	return (printf("%d", num));
 }
 /**
  * print_float - argument float
@@ -36,7 +36,7 @@ int print_float(va_list arg)
 	float num;
 
 	num = va_arg(arg, double);
-	printf("%f", num);
+	return (printf("%f", num));
 }
 /**
  * print_string - argument string
@@ -52,7 +52,7 @@ int print_string(va_list arg)
 	{
 		str = "(nil)";
 	}
-	printf("%s", str);
+	return (printf("%s", str));
 }
 
 /**
