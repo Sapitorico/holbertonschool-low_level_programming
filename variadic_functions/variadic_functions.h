@@ -1,18 +1,18 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * struct type - string struct
- * @type: the op
+ * struct fprint - string struct
+ * @format: the op
  * @f: the function associated
  */
-typedef struct types
+typedef struct fprint
 {
-	char *f;
-	void (*f)(val_list)
-} types_t;
+	char *fprint;
+	int (*f)(val_list)
+} fprint_t;
 
 /*prototypes*/
 int print_char(va_list args);
@@ -27,4 +27,5 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 
 void print_strings(const char *separator, const unsigned int n, ...);
-#endif/*MAIN_H*/
+
+#endif/*VARIADIC_FUNCTIONS_H*/

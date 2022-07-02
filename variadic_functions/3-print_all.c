@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 /**
  * print_char - argument char
  * @int: var
@@ -6,7 +7,7 @@
  */
 int print_char(va_list args)
 {
-	printf("%c", va_arg(args int));
+	printf("%c", va_arg(args char));
 }
 /**
  * print_int - argument int
@@ -33,10 +34,10 @@ int print_float(va_list args)
  */
 int print_string(va_list args)
 {
-	char *f = va_arg(args char *);
-	if(!f)
+	char *str = va_arg(args char *);
+	if(!str)
 	{
-		f = "(nil)"
+		str = "(nil)";
 	}
 	printf("%s", a);
 }
@@ -48,31 +49,37 @@ int print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	/*operation function structure*/
-	types_t types[] = {
+	fprint_t fn_list[] = {
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 
 	int i = 0;
-	char *s = ", ";
+	int const1 = 0, const2 = 0;
+	char *sep[] = {"", ", "};
 	va_list args;
 
 	va_start(args, format);
 	/* Initialize the argument list. */
 
 	/*strcmp compare strings character by character*/
-	while (format, types[i].type !=NULL)
+	while (format && format[const1] != NULL)
 	{
-		if (!strcmp(format, stypes[i].type))
+		while (fn_list[const2].format)
 		{
-			printf("%s", s);
-			types[i].f(args);
+			if (format[const1] == fn_list[const2].format)
+			{
+				printf("%s", sep[i != '\0']);
+				i += fn_list[const2].f(args);
+				break;
 
+			}
+			const2++;
 		}
-		i++;
+		const1++;
 	}
 
 	printf("\n");
