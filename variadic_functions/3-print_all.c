@@ -65,21 +65,20 @@ void print_all(const char * const format, ...)
 	/*operation function structure*/
 	va_list args;
 	char *separator[] = {"", ", "};
+	int const1 = 0, const2 = 0;
 
 	f_types_t funcs_ls[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
-
-	int const1 = 0, const2 = 0;
 
 	va_start(args, format);
 	/* Initialize the argument list. */
 
-	while (format && format[const1])
+	while (format != NULL && format[const1] != '\0')
 	{
 		const2 = 0;
 		while (funcs_ls[const2].types)
@@ -87,12 +86,12 @@ void print_all(const char * const format, ...)
 			/*compare strings character by character*/
 			if (!strcmp(format, funcs_ls[const2].types))
 			{
-				printf("%s", *separator);
 				funcs_ls[const2].f(args);
+				printf("%s", *separator);
 			}
-			const1++;
+			const2++;
 		}
-		const2++;
+		const1++;
 	}
 
 	printf("\n");
