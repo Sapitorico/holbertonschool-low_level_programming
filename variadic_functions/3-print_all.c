@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 	while (format && format[const1])
 	{
 		const2 = 0;
-		while (funcs_ls[const1].types)
+		while (funcs_ls[const2].types)
 		{
 			/*compare strings character by character*/
 			if (!strcmp(format, funcs_ls[const2].types))
