@@ -78,13 +78,13 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	/* Initialize the argument list. */
 
-	while (format != NULL && format[const2] != '\0')
+	while (format != NULL && format[const1] != '\0')
 	{
 		const2 = 0;
 		while (funcs_ls[const2].types != '\0')
 		{
 			/*compare strings character by character*/
-			if (format[const1] == funcs_ls[const2].types)
+			if (const2 < 4 && format[const1] == funcs_ls[const2].types)
 			{
 				funcs_ls[const2].f(args);
 				printf("%s", *separator);
