@@ -85,7 +85,7 @@ void print_all(const char * const format, ...)
 			/*compare strings character by character*/
 			if (format[const1] == funcs_ls[const2].types)
 			{
-				funcs_ls[const2].f(args);
+				funcs_ls[const2 != 0].f(args);
 				printf("%s", *separator);
 			}
 			const2++;
