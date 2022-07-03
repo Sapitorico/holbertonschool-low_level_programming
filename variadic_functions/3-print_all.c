@@ -78,7 +78,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	/* Initialize the argument list. */
 
-	while (format != NULL && format[const1] != '\0')
+	while (format != NULL && format[const2] != '\0')
 	{
 		const2 = 0;
 		while (funcs_ls[const2].types != '\0')
