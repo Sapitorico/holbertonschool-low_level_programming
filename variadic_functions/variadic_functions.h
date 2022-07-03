@@ -10,7 +10,7 @@
  */
 typedef struct f_types
 {
-	char *types;
+	char types;
 	int (*f)(va_list arg);
 } f_types_t;
 

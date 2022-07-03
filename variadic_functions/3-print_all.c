@@ -68,19 +68,20 @@ void print_all(const char * const format, ...)
 	int const1 = 0, const2 = 0;
 
 	f_types_t funcs_ls[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string}
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{'\0', NULL }
 	};
 
 	va_start(args, format);
 	/* Initialize the argument list. */
 
-	while (format != NULL && format[const2] != '\0')
+	while (format != NULL && format[const1] != '\0')
 	{
 		const2 = 0;
-		while (funcs_ls[const2].types != '\0')
+		while (funcs_ls[const2].types)
 		{
 			/*compare strings character by character*/
 			if (format[const1] == funcs_ls[const2].types)
