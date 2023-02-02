@@ -1,0 +1,7 @@
+#I declare the compiler variable
+CC=gcc
+#resource variable .c
+SRC= main.c school.c
+#implicit rule
+all:
+	$(CC) $(SRC) -o school

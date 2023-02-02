@@ -1,0 +1,3 @@
+#!/bin/bash
+# Flag -C executes the first 3 stages of compipilation
+gcc -c $CFILE

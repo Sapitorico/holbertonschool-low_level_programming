@@ -1,0 +1,3 @@
+#!/bin/bash
+# Flag -Des the process before the assembly
+gcc -S $CFILE

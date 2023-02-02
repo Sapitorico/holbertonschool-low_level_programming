@@ -1,0 +1,3 @@
+#!/bin/bash
+# -o crea un ejecutable a partir de la varibale, llamado cisfun
+gcc $CFILE -o cisfun

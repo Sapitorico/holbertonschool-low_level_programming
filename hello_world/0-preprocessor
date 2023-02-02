@@ -1,0 +1,3 @@
+#!/bin/bash
+# flag -e performs the pre -processing -o object
+gcc -E $CFILE -o c

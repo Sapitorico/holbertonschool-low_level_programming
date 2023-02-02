@@ -1,0 +1,3 @@
+#!/bin/bash
+# generate assembly code from C file and save it to output file
+gcc -S -masm=intel $CFILE
