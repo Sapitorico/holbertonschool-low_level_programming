@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
+/**
+ * main - print a alphabet in reverse
+ *
+ * Return: always 0
+ */
 int main(void)
 {
     char alphabet = 122;
