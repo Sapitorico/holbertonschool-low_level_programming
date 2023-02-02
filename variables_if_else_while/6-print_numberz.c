@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
+/**
+ * main - print a number from 0 to 9
+ *
+ * Return: always 0
+ */
 int main(void)
 {
     int number = 48;
