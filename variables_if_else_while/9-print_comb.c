@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    char number = 48, separator1 = ',', separator2 = 32;
+    int number = 48, separator1 = 44, separator2 = 32;
 
     while (number != 58)
     {
