@@ -11,7 +11,7 @@ int main(void)
 
 	while (alphabet != 123)
 	{
-        if (alphabet == 101 && alphabet == 113) alphabet++;
+        if (alphabet == 101 || alphabet == 113) alphabet++;
         write(1, &alphabet, 1), alphabet++;
 	}
 	putchar('\n');
