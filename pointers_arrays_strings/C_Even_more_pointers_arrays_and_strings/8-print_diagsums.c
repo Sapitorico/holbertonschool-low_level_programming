@@ -13,5 +13,5 @@ void print_diagsums(int *a, int size)
     for (iterator = 0; iterator < size; iterator++)
         result1 += a[iterator * size + iterator],
         result2 += a[size * (iterator + 1) - (iterator + 1)];
-    printf("%d, %d\n", abs(result1), abs(result2));
+    printf("%d, %d\n", result1, result2);
 }
